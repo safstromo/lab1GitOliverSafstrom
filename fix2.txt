@@ -1,0 +1,33 @@
+git init main
+nano README.md
+git add README.md
+git commit -m "Initial commit"
+git switch -c feature1
+nano README.md
+git add README.md
+git commit -m "Update README.md"
+git switch main
+nano README.md
+git add README.md
+git commit -m "Change moose to mahmut"
+git merge --no-ff feature1
+nano README.md
+git add README.md
+git commit
+git tag extinct
+git reset --hard f0c2
+git branch feature2
+nano README.md
+git add README.md
+git commit -m "Change to uppercase"
+git switch feature2
+touch fix1.txt
+git add fix1.txt
+git commit -m "Add fix1.txt"
+touch fix2.txt
+git add fix2.txt
+git commit -m "Add fix2.txt"
+git cherry-pick 3d71
+git remote add origin https://github.com/safstromo/lab1GitOliverSafstrom.git
+git branch -M main
+git push -u origin main
