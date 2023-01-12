@@ -31,3 +31,27 @@ git cherry-pick 3d71
 git remote add origin https://github.com/safstromo/lab1GitOliverSafstrom.git
 git branch -M main
 git push -u origin main
+
+git rebase -i HEAD~3
+pick 112868c Add fix2.txt
+squash 9cfad2a Add git commands to fix2.txt
+pick 9ce3599 Add .gitignore
+
+git switch -c feature3
+
+git add fix2.txt
+git commit -m "Add git commands for 18,19,20"
+
+git switch main
+git merge feature3
+git push
+
+git reset --hard 3f2ca
+git switch feature3
+git add fix2.txt
+git commit --amend --no-edit
+
+git switch main
+git merge feature3
+git pull --no-rebase
+git push
