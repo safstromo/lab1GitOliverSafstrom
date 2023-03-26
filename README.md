@@ -1,3 +1,3 @@
-Duck
-Mahmut
-Cat
+Git lab
+
+Practice git
